@@ -1,0 +1,6 @@
+name: RTitle
+version: '${project.version}'
+main: ru.siaw.personal.rtitle.RTitle
+api-version: 1.16
+softdepend: [PlaceholderAPI]
+authors: [tom8hawk]
