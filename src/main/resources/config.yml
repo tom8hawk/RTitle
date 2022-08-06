@@ -1,0 +1,75 @@
+Scoreboard:
+  join:
+    enabled: true
+
+    title: '&eДобро пожаловать &fна сервер!'
+    text:
+      - ''
+      - 'Никнейм: %player_name%'
+      - 'Пинг: %player_ping%'
+      - ''
+      - 'Онлайн: %server_online%'
+      - 'ТПС: %server_tps_1_colored%'
+      - 'Аптайм: %server_uptime%'
+      - ''
+      - 'Наш форум: forum.rtw.com'
+      - 'Донат: donate.rtw.com'
+
+    display_time: 15s # Время показа, может указываться в s - секундах, m - минутах, h - часах
+
+  constant:
+    enabled: true
+
+    title: 'Сервер &e%server_name%'
+    text:
+      - ''
+      - 'Никнейм: %player_name%'
+      - 'Пинг: %player_ping%'
+      - ''
+      - 'Онлайн: %server_online%'
+      - 'ТПС: %server_tps_1_colored%'
+      - 'Аптайм: %server_uptime%'
+      - ''
+      - 'Наш форум: forum.rtw.com'
+      - 'Донат: donate.rtw.com'
+
+BossBar:
+  enabled: true
+
+  bossBars:
+    1:
+      text: 'ТПС сервера: %server_tps_1_colored%'
+
+      color: BLUE # BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW
+      segments: 12 # 0 - Не сегментировано, может быть 6, 10, 12 и 20 сегментов
+
+      proccess: # Будет ли уменьшаться прогресс
+        enabled: true # display_time игнорируется, если включено
+        time: 15s
+
+      display_time: 25s # Время показа этого боссбара
+      eternal: false # Будет ли боссбар показываться постоянно (игнорирует display_time)
+    2:
+      text: 'Онлайн: %server_online%'
+
+      color: RED
+      segments: 10
+
+      proccess:
+        enabled: false
+        time: 15s
+
+      display_time: 25s
+      eternal: false
+    3:
+      text: 'RAM: %server_ram_used% / %server_ram_total%'
+
+      color: YELLOW
+      segments: 0
+
+      proccess:
+        enabled: false
+        time: 15s
+
+      display_time: 25s
+      eternal: true
